@@ -12,9 +12,11 @@ public class PageController {
 
     @Value("${spring.profiles.active}")
     private String environment;
+    @Value("${msg}")
+    private String msg;
 
     @RequestMapping("/")
     public String home() {
-        return environment;
+        return environment + " " + msg;
     }
 }
