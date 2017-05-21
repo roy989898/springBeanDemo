@@ -1,8 +1,12 @@
 package com.example.abc;
 
+import org.springframework.context.annotation.Bean;
+
 /**
  * Created by pomingpo on 2017/5/18.
  */
+
+
 public class User {
     private String firstName;
     private String lastName;
@@ -13,9 +17,11 @@ public class User {
         this.lastName = lastName;
     }
 
+
     public String getFirstName() {
         return firstName;
     }
+
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
